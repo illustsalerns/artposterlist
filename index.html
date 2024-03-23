@@ -1,9 +1,158 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>Google Drive Images List</title>
+    <meta charset="UTF-8">
+    <title>Image Thumbnails</title>
+    <script>
+    function collectCheckedImages() {
+        var checkedValues = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(function(checkbox) {
+            return checkbox.value;
+        });
+        document.getElementById('selectedImages').value = checkedValues.join(',');
+    }
+    </script>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; }
+        img { width: 128px; height: auto; }
+    </style>
 </head>
 <body>
-    <div id="files"></div>
-</body>
-</html>
+<h1>Image Thumbnails</h1>
+選択した全ての画像の番号をリストアップします。複数購入される場合はリストアップしたテキストをコピーしてご連絡ください。<br>
+<button onclick="collectCheckedImages()">番号を取得</button>
+<input type="text" id="selectedImages"></input>
+<table>
+    <tr>
+        <th>選択</th>
+        <th>画像</th>
+        <th>タイトル</th>
+    </tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B001" name="B001" value="B001"></td>
+    <td><a href="images\B001.jpg" target="_blank"><img src="images\B001.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B001</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B002" name="B002" value="B002"></td>
+    <td><a href="images\B002.jpg" target="_blank"><img src="images\B002.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B002</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B003" name="B003" value="B003"></td>
+    <td><a href="images\B003.jpg" target="_blank"><img src="images\B003.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B003</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B004" name="B004" value="B004"></td>
+    <td><a href="images\B004.jpg" target="_blank"><img src="images\B004.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B004</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B005" name="B005" value="B005"></td>
+    <td><a href="images\B005.jpg" target="_blank"><img src="images\B005.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B005</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B006" name="B006" value="B006"></td>
+    <td><a href="images\B006.jpg" target="_blank"><img src="images\B006.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B006</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B007" name="B007" value="B007"></td>
+    <td><a href="images\B007.jpg" target="_blank"><img src="images\B007.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B007</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B008" name="B008" value="B008"></td>
+    <td><a href="images\B008.jpg" target="_blank"><img src="images\B008.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B008</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B009" name="B009" value="B009"></td>
+    <td><a href="images\B009.jpg" target="_blank"><img src="images\B009.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B009</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B010" name="B010" value="B010"></td>
+    <td><a href="images\B010.jpg" target="_blank"><img src="images\B010.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B010</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B011" name="B011" value="B011"></td>
+    <td><a href="images\B011.jpg" target="_blank"><img src="images\B011.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B011</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B012" name="B012" value="B012"></td>
+    <td><a href="images\B012.jpg" target="_blank"><img src="images\B012.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B012</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B013" name="B013" value="B013"></td>
+    <td><a href="images\B013.jpg" target="_blank"><img src="images\B013.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B013</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B014" name="B014" value="B014"></td>
+    <td><a href="images\B014.jpg" target="_blank"><img src="images\B014.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B014</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B015" name="B015" value="B015"></td>
+    <td><a href="images\B015.jpg" target="_blank"><img src="images\B015.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B015</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B016" name="B016" value="B016"></td>
+    <td><a href="images\B016.jpg" target="_blank"><img src="images\B016.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B016</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B017" name="B017" value="B017"></td>
+    <td><a href="images\B017.jpg" target="_blank"><img src="images\B017.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B017</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B018" name="B018" value="B018"></td>
+    <td><a href="images\B018.jpg" target="_blank"><img src="images\B018.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B018</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B019" name="B019" value="B019"></td>
+    <td><a href="images\B019.jpg" target="_blank"><img src="images\B019.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B019</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B020" name="B020" value="B020"></td>
+    <td><a href="images\B020.jpg" target="_blank"><img src="images\B020.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B020</td>
+</tr>
+
+<tr>
+    <td align="center"><input type="checkbox" id="chk_B021" name="B021" value="B021"></td>
+    <td><a href="images\B021.jpg" target="_blank"><img src="images\B021.jpg" alt="image"></a></td>
+    <td>【高画質・光沢紙】オリジナル美女・美少女 アニメ 同人 セクシーアートポスター A4  No.B021</td>
+</tr>
+</table></body></html>
