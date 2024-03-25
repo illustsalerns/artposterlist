@@ -16,18 +16,31 @@
     <style>
         table { width: 100%; border-collapse: collapse; }
         th, td { border: 1px solid black; padding: 8px; }
-        img { width: 128px; height: auto; }
-        @media (max-width: 600px) {
-            img { width: 100%; height: auto; }  /* 画面幅が狭い場合は画像を画面幅いっぱいに表示 */
-            table, th, td { font-size: smaller; }  /* フォントサイズを小さくする */
+        img { width: 100%; max-width: 128px; height: auto; }
+
+        /* スマートフォン用のスタイル */
+        @media (max-width: 599px) {
+            table, th, td { font-size: smaller; }
+        }
+
+        /* タブレット用のスタイル */
+        @media (min-width: 600px) and (max-width: 1023px) {
+            th, td { padding: 10px; }
+            img { max-width: 100px; }
+        }
+
+        /* デスクトップ用のスタイル */
+        @media (min-width: 1024px) {
+            th, td { padding: 12px; }
+            img { max-width: 128px; }
         }
     </style>
 </head>
 <body>
-<h1>オリジナル美女・美少女 同人セクシーポスター2</h1>
+<h1>オリジナル美女・美少女 同人セクシーポスター</h1>
 選択した全ての画像の番号をリストアップします。複数購入される場合はリストアップしたテキストをコピーしてご連絡ください。<br>
 <button onclick="collectCheckedImages()">番号を取得</button>
-<input type="text" id="selectedImages" style="width:100%;"></input>
+<input type="text" id="selectedImages" style="width:100%; margin-top:10px; margin-bottom:20px;"></input>
 <table>
     <tr>
         <th>選択</th>
